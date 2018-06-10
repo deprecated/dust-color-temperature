@@ -1,0 +1,8 @@
+* Motivation
++ It is common to see dust color temperature interpreted naively, as if it were the dust grain temperature
++ I think this is only true if the following conditions hold:
+  1. The grains are at a single temperature
+     - For instance, if you had some big grains at 100 K and some smaller ones at 200 K, then the big grains would have emission that peaks at 20 micron, and the smaller grains at 10 micron. So the 10-to-20 micron color T might be telling you more about the big/small ratio than the grain temperature
+  2. The correct grain opacity law is used in constructing the color temperature
+     - It seems a power law (\beta index) is often assumed, which is fine for sub-mm, but seems a bit strange in the mid-IR, where you have the silicate absorption features
++ So I want to play around with some simple models of poly-disperse silicate and graphite dust mixtures in radiative equilibrium, to see how the mid-infrared color temperature varies with parameters - and try and get some intuition about it 
